@@ -1,5 +1,4 @@
-import { Navbar, Nav, Container } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import logo from "../assets/TestLogo/TestLogo.png";
 import {navLink} from "../data/data.js"
 import { Settings , VerticalMenu} from "../assets/Icons/index.js";
@@ -10,11 +9,9 @@ const Header = () => {
     <>
     <div className="navbar-container" > 
       <Navbar style={{ background: "#ffffff"}}>
-          {/* <LinkContainer to="/"> */}
             <Navbar.Brand style={{ background: "#ffffff"}}>
               <img style={{ background: "#ffffff"}} src={logo} alt="Tech Care"></img>
             </Navbar.Brand>
-          {/* </LinkContainer> */}
 
           <Nav className="justify-content-center nav-container">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -23,7 +20,7 @@ const Header = () => {
                 {navLink.map((link) => {
                   const { id, text, icon } = link;
                   return (
-                    <Nav.Item style={{ background: "#ffffff"}} className="nav-item" key={id} to="/">
+                    <Nav.Item style={{ background: "#ffffff"}} className="nav-item" key={id} >
                       <Nav style={{ background: "#ffffff"}}>
                       <i className="icon">{icon} </i>
                       <span className="header-text">{text}</span>
@@ -36,13 +33,13 @@ const Header = () => {
           </Nav>
 
           <Nav style={{ background: "#ffffff"}} className="justify-content-end" >
-            <Nav.Item>
-              <Nav style={{ background: "#ffffff"}}><UserProfile /></Nav>
+            <Nav.Item style={{ background: "#ffffff"}}>
+              <Nav style={{ background: "#ffffff"}}><UserProfile/></Nav>
             </Nav.Item>
-            <Nav.Item>
+            <Nav.Item style={{ background: "#ffffff"}}>
               <Nav style={{ background: "#ffffff"}}><Settings/></Nav>
             </Nav.Item>
-            <Nav.Item>
+            <Nav.Item style={{ background: "#ffffff"}}>
               <Nav style={{ background: "#ffffff"}}><VerticalMenu/></Nav>
             </Nav.Item>
           </Nav>

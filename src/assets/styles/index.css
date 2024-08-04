@@ -1,21 +1,57 @@
-*{
-  background: #F6F7F8 0% 0% no-repeat padding-box;
+* {
+  background: #f6f7f8 0% 0% no-repeat padding-box;
 }
-.sidebar-div,.sidebar-title, .sidebar-div, .patient-info, .actions, .dots, .profile-info, .name, .title, .profile-name,
-.profile-data, .patient-details, .table-container, .diagnosisHistory-container, .profile-picture, .header-text, .user-details,
-.patient-container, .profile-pic, .patient-name, .patient-details, .profile-info-container, .navbar-nav, icon,
-.sidebar-heading, .info-cards,  .sidebar-title, .heading, .list-group, .result-name, .result-info,
-.navbar-container, ListGroup, Navbar,Nav, i , Table, tbody, .nav-container, Nav.Item, table{
+.sidebar-div,
+.sidebar-title,
+.sidebar-div,
+.patient-info,
+.actions,
+.dots,
+.profile-info,
+.name,
+.title,
+.profile-name,
+.profile-data,
+.patient-details,
+.table-container,
+.diagnosisHistory-container,
+.profile-picture,
+.header-text,
+.user-details,
+.patient-container,
+.profile-pic,
+.patient-name,
+.patient-details,
+.profile-info-container,
+.navbar-nav,
+icon,
+.sidebar-heading,
+.info-cards,
+.sidebar-title,
+.heading,
+.list-group,
+.result-name,
+.result-info,
+.navbar-container,
+ListGroup,
+Navbar,
+Nav,
+i,
+Table,
+tbody,
+.nav-container,
+Nav.Item,
+table {
   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
 }
 main {
   min-height: 80vh;
 }
 
-.nav-item{
- padding-left: 10px;
- padding-right: 10px;
- margin: 2px;
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 2px;
 }
 
 .nav-container {
@@ -39,7 +75,7 @@ main {
   align-items: center;
   margin: 0 10px;
 }
-.header-text{
+.header-text {
   margin-left: 10px;
 }
 
@@ -210,22 +246,20 @@ main {
   opacity: 1;
 }
 
-
-.lab-result{
+.lab-result {
   top: 880px;
-left: 1215px;
-width: 367px;
-overflow: auto;
-background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border-radius: 16px;
-opacity: 1;
+  left: 1215px;
+  overflow: auto;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  opacity: 1;
 
-border-radius: 12px;
-opacity: 1;
-margin: 10px;
-padding: 10px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  opacity: 1;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .table-container {
@@ -238,7 +272,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 10px;
   opacity: 1;
-  overflow: auto ; 
+  overflow: auto;
   border-radius: 12px;
   opacity: 1;
   margin: 10px;
@@ -246,8 +280,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-
-thead tr {
+thead {
   top: 920px;
   left: 437px;
   width: 726px;
@@ -261,7 +294,6 @@ table {
   background: #ffffff 0% 0% no-repeat padding-box;
   overflow: auto;
 }
-
 
 th {
   top: 935px;
@@ -281,6 +313,7 @@ th {
 }
 
 td {
+  margin: 10px;
   top: 1102px;
   left: 686px;
   width: 287px;
@@ -296,6 +329,8 @@ td {
   color: #072635;
   opacity: 1;
   background: #ffffff;
+  border-bottom: #F6F7F8 0% 0% no-repeat padding-box;
+  opacity: 1;
 }
 
 .chart-heading {
@@ -328,7 +363,10 @@ td {
   padding: 10px;
   margin: 10px;
 }
-canvas, .chart-container, .chart-heading{
+
+canvas,
+.chart-container,
+.chart-heading {
   background: #f4f0fe 0% 0% no-repeat padding-box;
 }
 
@@ -343,7 +381,7 @@ canvas, .chart-container, .chart-heading{
 .heart_rate {
   background: #ffe6f1 0% 0% no-repeat padding-box;
 }
-.card-img{
+.card-img {
   background: inherit;
 }
 
@@ -363,6 +401,7 @@ canvas, .chart-container, .chart-heading{
 }
 
 .card-data {
+  background: inherit;
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800)
     30px/41px var(--unnamed-font-family-manrope);
   letter-spacing: var(--unnamed-character-spacing-0);
@@ -371,7 +410,6 @@ canvas, .chart-container, .chart-heading{
   font: normal normal 800 30px/41px Manrope;
   letter-spacing: 0px;
   opacity: 1;
-  background: inherit;
 }
 
 .card-data-details {
@@ -395,7 +433,6 @@ canvas, .chart-container, .chart-heading{
 }
 
 .card-content {
-  
   margin: 10px;
 }
 
@@ -448,33 +485,35 @@ canvas, .chart-container, .chart-heading{
   opacity: 1;
 }
 
-.profile-info-container{
+.profile-info-container {
   margin-top: 25px;
 }
 
-.profile-data, .profile-info {
-margin-left: 10px;
+.profile-data,
+.profile-info {
+  margin-left: 10px;
 }
 
-.profile-info{
+.profile-info {
   padding: 0px 5px 0px 5px;
 }
-.info-button{
+.info-button {
   width: 220px;
   height: 30px;
   left: 1289px;
   background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
-  background: #01F0D0 0% 0% no-repeat padding-box;
+  background: #01f0d0 0% 0% no-repeat padding-box;
   border-radius: 41px;
   opacity: 1;
   margin: auto;
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
-
 }
 .info-button span {
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-14) / var(--unnamed-line-spacing-19)
+    var(--unnamed-font-family-manrope);
   letter-spacing: var(--unnamed-character-spacing-0);
   color: var(--unnamed-color-072635);
   text-align: center;
@@ -485,8 +524,6 @@ margin-left: 10px;
   margin: auto;
   background-color: inherit;
 }
-
-
 
 .row {
   display: flex;
@@ -501,15 +538,15 @@ margin-left: 10px;
   padding: 0 4px;
 }
 
-.patients-tab-screen{
+.patients-tab-screen {
   display: flex;
 }
 
-.navbar-container{
-margin: 15px;
-padding: 12px;
-background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border-radius: 70px;
-opacity: 1;
+.navbar-container {
+  margin: 15px;
+  padding: 12px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 70px;
+  opacity: 1;
 }

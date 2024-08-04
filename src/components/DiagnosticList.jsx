@@ -9,7 +9,7 @@ const DiagnosticList = ({list}) => {
           <div className="heading">DiagnosticList</div>
           <Table>
             <thead>
-              <tr className="table-heading">
+              <tr>
                 <th>Problem/Diagnosis</th>
                 <th>Description</th>
                 <th>Status</th>

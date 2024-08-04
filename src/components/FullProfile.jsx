@@ -68,7 +68,7 @@ const FullProfile = ({ jData }) => {
               <div className="title">{jData.date_of_birth}</div>
             </div>
           </div>
-          <div className="profile-data">
+          <div style={{ background: "#ffffff"}}className="profile-data">
             <InsuranceIcon />
             <div className="profile-info">
               <div className="name">Insurance Provider</div>
