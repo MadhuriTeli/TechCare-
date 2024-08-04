@@ -5,9 +5,9 @@ const DiagnosticList = ({list}) => {
   return (
     <>
       <div className="table-container">
-        <div>
+        
           <div className="heading">DiagnosticList</div>
-          <Table responsive>
+          <Table>
             <thead>
               <tr className="table-heading">
                 <th>Problem/Diagnosis</th>
@@ -26,7 +26,7 @@ const DiagnosticList = ({list}) => {
             </tbody>
           </Table>
         </div>
-      </div>
+  
     </>
   );
 };

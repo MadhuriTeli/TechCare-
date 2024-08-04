@@ -10,13 +10,11 @@ const PatientsList = ({patientsList}) => {
           <div className="sidebar-title">
             Patient</div>
             <span className="actions">
-              <i>
                 <Search />
-              </i>
             </span>
         </div>
 
-        <ListGroup>
+        <ListGroup style={{ background: "#ffffff"}}>
           {patientsList?.map((patient) => (
             <div key={patient.name} className="patient-container">
               <img

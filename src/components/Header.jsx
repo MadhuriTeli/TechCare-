@@ -8,26 +8,26 @@ import UserProfile from "./UserProfile.jsx";
 const Header = () => {
   return (
     <>
-      <Navbar>
-        <Container>
-          <LinkContainer to="/">
-            <Navbar.Brand>
-              <img src={logo} alt="Tech Care"></img>
+    <div className="navbar-container" > 
+      <Navbar style={{ background: "#ffffff"}}>
+          {/* <LinkContainer to="/"> */}
+            <Navbar.Brand style={{ background: "#ffffff"}}>
+              <img style={{ background: "#ffffff"}} src={logo} alt="Tech Care"></img>
             </Navbar.Brand>
-          </LinkContainer>
+          {/* </LinkContainer> */}
 
           <Nav className="justify-content-center nav-container">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse>
-              <Nav className="justify-content-center">
+              <Nav style={{ background: "#ffffff"}} className="justify-content-center">
                 {navLink.map((link) => {
                   const { id, text, icon } = link;
                   return (
-                    <Nav.Item className="nav-item" key={id} to="/">
-                      <Nav.Link>
+                    <Nav.Item style={{ background: "#ffffff"}} className="nav-item" key={id} to="/">
+                      <Nav style={{ background: "#ffffff"}}>
                       <i className="icon">{icon} </i>
-                      <span>{text}</span>
-                      </Nav.Link>
+                      <span className="header-text">{text}</span>
+                      </Nav>
                     </Nav.Item>
                   );
                 })}
@@ -35,19 +35,19 @@ const Header = () => {
             </Navbar.Collapse>
           </Nav>
 
-          <Nav className="justify-content-end" >
+          <Nav style={{ background: "#ffffff"}} className="justify-content-end" >
             <Nav.Item>
-              <Nav.Link><UserProfile/></Nav.Link>
+              <Nav style={{ background: "#ffffff"}}><UserProfile /></Nav>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link><Settings/></Nav.Link>
+              <Nav style={{ background: "#ffffff"}}><Settings/></Nav>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link><VerticalMenu/></Nav.Link>
+              <Nav style={{ background: "#ffffff"}}><VerticalMenu/></Nav>
             </Nav.Item>
           </Nav>
-        </Container>
       </Navbar>
+      </div>
     </>
   );
 }

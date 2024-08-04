@@ -6,7 +6,7 @@ const UserProfile = () => {
     <>
       <div className="user-details">
         <img src={profile} className="profile-pic" />
-        <div>
+        <div style={{ background: "#ffffff"}}>
           <div className="name">Dr. Jose Simmons</div>
           <div className="title">General Practitioner</div>
         </div>
