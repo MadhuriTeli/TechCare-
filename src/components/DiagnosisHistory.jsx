@@ -1,45 +1,44 @@
-import React , {useState} from "react";
+import React, { useState } from "react";
 import LineChart from "./LineChart";
 import "chart.js/auto";
 
-const DiagnosisHistory = ({history}) => {
-
-    console.log(history.diagnosis_history)
-
-//     const [chartData, setChartData] = useState({
-//         labels: history.diagnosis_history?.map((data) => data.month), 
-//         datasets: [
-//           {
-//             label: "BP",
-//             data: history.diagnosis_history?.map((data) => data.blood_pressure.systolic.value),
-//             backgroundColor: [
-//               "rgba(75,192,192,1)",
-//               "#50AF95",
-//               "#f3ba2f",
-//               "#2a71d0"
-//             ],
-//             borderColor: "black",
-//             borderWidth: 2
-//         }
-//     ]
-//   });
-
-const data = {
-    labels: history.diagnosis_history?.map((data) => data.month),
+const DiagnosisHistory = ({ history }) => {
+  const data = {
+    labels: history.diagnosis_history?.map(
+      (data) => ` ${data.month.slice(0, 3)}, ${data.year}`
+    ),
     datasets: [
-    {
-    label: "My First dataset",
-    backgroundColor: "rgb(255, 99, 132)",
-    borderColor: "rgb(255, 99, 132)",
-    data: history.diagnosis_history?.map((data) => data.blood_pressure.systolic.value),
-    },
+      {
+        label: "Systolic",
+        data: history.diagnosis_history?.map(
+          (data) => data.blood_pressure.systolic.value
+        ),
+        borderColor: "#C26EB4",
+        backgroundColor: "#C26EB4",
+        pointRadius: 6,
+        fill: false,
+        cubicInterpolationMode: "monotone",
+      },
+      {
+        label: "Diastolic",
+        data: history.diagnosis_history?.map(
+          (data) => data.blood_pressure.diastolic.value
+        ),
+        borderColor: "#8C6FE6",
+        backgroundColor: "#8C6FE6",
+        pointRadius: 6,
+        fill: false,
+        cubicInterpolationMode: "monotone",
+      },
     ],
-    };
+  };
 
   return (
     <>
-      <div>DiagnosisHistory</div>
-      <LineChart chartData={data} />
+      <div className="diagnosisHistory-container">
+        <div className="heading">DiagnosisHistory</div>
+        <LineChart chartData={data}/>
+      </div>
     </>
   );
 };
