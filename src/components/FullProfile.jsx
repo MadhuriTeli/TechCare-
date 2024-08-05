@@ -7,8 +7,6 @@ import {
 } from "../assets/Icons";
 
 const FullProfile = ({ jData }) => {
-  console.log(jData);
-
   function convertDate(dateString) {
     const date = new Date(dateString);
     const monthNames = [
